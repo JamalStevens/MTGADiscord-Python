@@ -22,7 +22,7 @@ async def on_ready():
 async def gen_pool(ctx, setabbr: str):
     file1 = open(f"{ctx.message.author.name} card list.txt", "w")
     await ctx.send(":black_circle:Common Cards")
-    for x in range(2):
+    for x in range(24):
         url = f"https://api.scryfall.com/cards/random?q=s%3A{setabbr}+r%3Acommon+-t%3Abasic"
         with requests.get(url) as response:
             response_string = response.content
@@ -33,7 +33,7 @@ async def gen_pool(ctx, setabbr: str):
         time.sleep(.500)
 
     await ctx.send(":blue_circle:Uncommon Cards")
-    for x in range(2):
+    for x in range(12):
         url = f"https://api.scryfall.com/cards/random?q=s%3A{setabbr}+r%3Auncommon+-t%3Abasic"
         with requests.get(url) as response:
             response_string = response.content
