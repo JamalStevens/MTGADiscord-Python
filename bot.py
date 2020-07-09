@@ -8,8 +8,8 @@ import requests
 
 load_dotenv()
 
-#TOKEN = os.getenv('DISCORD_TOKEN')
-TOKEN = os.environ['DISCORD_BOT_TOKEN']
+TOKEN = os.getenv('DISCORD_TOKEN')
+#TOKEN = os.environ['DISCORD_BOT_TOKEN']
 bot = commands.Bot(command_prefix='!')
 
 
