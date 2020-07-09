@@ -22,9 +22,8 @@ Generates a random pool of cards using scryfall random card API.
 
 <h2>Resources</h2>
 
-To obtain the token follow the directions here:
- https://www.writebots.com/discord-bot-token/
-
-
 For More info on heroku env variables:  
 https://devcenter.heroku.com/articles/config-vars
+
+To obtain the token follow the directions here:
+https://www.writebots.com/discord-bot-token/
